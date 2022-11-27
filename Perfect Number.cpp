@@ -1,23 +1,23 @@
-//mukemmel olan sayıları ekrana yazdıran C kodu
+//mukemmel olan sayÃ½larÃ½ ekrana yazdÃ½ran C kodu
 #include <stdio.h>
 #include <stdlib.h>
 
 int main(int argc, char* argv[]) {
-    //değişken tanımlama ksımı
+    //deÃ°iÃ¾ken tanÃ½mlama ksÃ½mÃ½
     int n, i, toplam;
     printf("\nTHERE ARE PERFECT NUMBERS :  \n\n");
-    //döngü kısmı for içinde while
+    //dÃ¶ngÃ¼ kÃ½smÃ½ for iÃ§inde while
     for (n = 1; n <= 1000; n++) {
         i = 1;
         toplam = 0;
         while (i < n)
         {
-            //modunu alıp tam bölenlerini bulan kısım
+            //modunu alÃ½p tam bÃ¶lenlerini bulan kÃ½sÃ½m
             if (n % i == 0)
                 toplam = toplam + i;
             i++;
         }
-        //bölen toplamı eşit değilse yazdırma kısmı
+        //bÃ¶len toplamÃ½ eÃ¾itse yazdÃ½rma kÃ½smÃ½
         if (toplam == n)
 
             printf("%d ", n);
